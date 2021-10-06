@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --DarkCyan: hsl(185, 75%, 39%);
+  --VeryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+  --DarkGrayishBlue: hsl(227, 10%, 46%);
+  --DarkGray: hsl(0, 0%, 59%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+main {
+  font-family: "Kumbh Sans";
+  font-size: 18px;
+  color: var(--VeryDarkDesaturatedBlue);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: var(--DarkCyan);
+  z-index: 0;
+  overflow: hidden;
+}
+.circle {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+}
+
+.circle.one {
+  top: -250px;
+  left: -250px;
+}
+
+.circle.two {
+  bottom: -250px;
+  right: -250px;
+}
+.card_container {
+  height: 400px;
+  width: 350px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #fff;
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+}
+.up_image {
+  background-image: url(./images/bg-pattern-card.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 140px;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.profile_image {
+  background: url(./images/image-victor.jpg) center/cover no-repeat;
+  border-radius: 50%;
+  border: white solid 5px;
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  top: 80px;
+  left: 115px;
+}
+
+.middlesection p {
+  font-weight: 700;
+}
+span {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--DarkGrayishBlue);
+}
+
+.middlesection .age {
+  margin-left: 15px;
+}
+.middlesection .location {
+  display: block;
+  margin: 15px 0px;
+  font-size: 16px;
+}
+.underline {
+  height: 1px;
+  background-color: hsla(0, 0%, 59%, 0.5);
+}
+.downsection {
+  font-weight: 700;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.downsection .one {
+  flex: 1;
+}
+.downsection .two {
+  flex: 1;
+}
+.downsection .three {
+  flex: 1;
+}
+.downsection span {
+  letter-spacing: 1px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  color: white;
+  font-size: 12px;
+}
+.attribution a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 750px) {
+  .circle {
+    height: 800px;
+    width: 800px;
+  }
+  .circle.one {
+    top: -400px;
+  }
+  .circle.two {
+    bottom: -400px;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .circle {
+    height: 1000px;
+    width: 1000px;
+  }
+  .circle.one {
+    top: -600px;
+  }
+  .circle.two {
+    bottom: -600px;
+  }
+}
